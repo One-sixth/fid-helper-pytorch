@@ -63,17 +63,16 @@ pip install fid-helper-pytorch
 Install from source
 从源码中安装  
 ```commandline
-git clone xxx
-cd xxx
+git clone https://github.com/One-sixth/fid-helper-pytorch
+cd fid-helper-pytorch
 python setup.py install
 ```
 Build wheel
 构建轮子
 ```commandline
-git clone xxx
-cd xxx
-pip install -U build
-python -m build
+git clone https://github.com/One-sixth/fid-helper-pytorch
+cd fid-helper-pytorch
+python setup.py bdist_wheel
 # The wheel that you can found in dist folder.
 ```
 
