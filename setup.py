@@ -1,8 +1,15 @@
 from setuptools import setup  # , find_packages
+import sys
+import os
+import importlib
+sys.path.insert(0, os.path.dirname(__file__) + '/fid_helper_pytorch')
+ver = importlib.import_module('__version__')
+ver_str = ver.__version__
+
 
 setup(
     name='fid-helper-pytorch',
-    version='0.1.0',
+    version=ver_str,
     description='An easy-to-use pytorch fid toolkit.',
     author='onesixth',
     author_email='noexist@noexist.noexist',

@@ -2,6 +2,7 @@
 sample_*/*.png
 gen_sample_from_stylegan3/sample_*/*.png
 */*_old
+upload.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
