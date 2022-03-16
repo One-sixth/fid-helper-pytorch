@@ -1,0 +1,112 @@
+2022-03-16 18:15:31.523 | INFO     | __main__:<module>:28 - system platform: linux
+2022-03-16 18:15:31.523 | INFO     | __main__:<module>:29 - pytorch version: 1.11.0+cu113
+2022-03-16 18:15:31.523 | INFO     | __main__:<module>:30 - pytorch cuda version: 11.3
+2022-03-16 18:15:31.523 | INFO     | __main__:<module>:31 - pytorch git_version: bc2c6edaf163b1a1330e37a6e34caf8c553e4755
+2022-03-16 18:15:31.525 | INFO     | __main__:<module>:52 - Used device: NVIDIA GeForce RTX 3090
+2022-03-16 18:15:31.525 | INFO     | __main__:<module>:53 - Used sample folder 1: sample_1
+2022-03-16 18:15:31.525 | INFO     | __main__:<module>:54 - Used sample folder 2: sample_2
+2022-03-16 18:15:31.525 | INFO     | __main__:<module>:59 - 1. pytorch-fid
+2022-03-16 18:16:24.267 | INFO     | __main__:<module>:62 -                                          score: 3.772843757504859
+2022-03-16 18:16:24.268 | INFO     | __main__:<module>:64 - 
+
+
+2022-03-16 18:16:24.311 | INFO     | __main__:<module>:69 - 2. clean-fid
+2022-03-16 18:18:05.197 | INFO     | __main__:<module>:77 - clean                                    score: 3.7965344580221654
+2022-03-16 18:19:00.374 | INFO     | __main__:<module>:77 - legacy_pytorch                           score: 3.772843691229639
+2022-03-16 18:20:33.555 | INFO     | __main__:<module>:77 - legacy_tensorflow                        score: 3.773897315245904
+2022-03-16 18:20:33.564 | INFO     | __main__:<module>:82 - 
+
+
+2022-03-16 18:20:33.600 | INFO     | __main__:<module>:87 - 3. fid-helper-pytorch
+2022-03-16 18:22:12.602 | INFO     | __main__:<module>:110 - tf :default_1 nv_bilinear                score: 3.769647532526235
+2022-03-16 18:23:46.540 | INFO     | __main__:<module>:110 - tf :default_1 torch_bilinear             score: 3.7697865876052568
+2022-03-16 18:25:23.573 | INFO     | __main__:<module>:110 - tf :default_1 torch_bilinear_aa          score: 3.76975844472505
+2022-03-16 18:26:59.190 | INFO     | __main__:<module>:110 - tf :default_1 torch_bicubic              score: 3.802731248109485
+2022-03-16 18:28:32.737 | INFO     | __main__:<module>:110 - tf :default_1 torch_bicubic_aa           score: 3.7943155286083377
+2022-03-16 18:29:57.529 | INFO     | __main__:<module>:110 - tf :default_1 torch_area                 score: 3.7293311914169998
+2022-03-16 18:31:18.933 | INFO     | __main__:<module>:110 - tf :default_1 torch_nearest              score: 3.6815251348161455
+2022-03-16 18:32:40.890 | INFO     | __main__:<module>:110 - tf :default_1 torch_nearest_exact        score: 3.682872579776031
+2022-03-16 18:34:00.567 | INFO     | __main__:<module>:110 - tf :default_1 cv_bilinear                score: 3.7702443530161767
+2022-03-16 18:35:20.324 | INFO     | __main__:<module>:110 - tf :default_1 cv_bilinear_exact          score: 3.7697380589048333
+2022-03-16 18:36:41.799 | INFO     | __main__:<module>:110 - tf :default_1 cv_nearest                 score: 3.6815251348161455
+2022-03-16 18:38:04.274 | INFO     | __main__:<module>:110 - tf :default_1 cv_nearest_exact           score: 3.683526190117879
+2022-03-16 18:39:31.913 | INFO     | __main__:<module>:110 - tf :default_1 cv_bits                    score: 3.7697380589048333
+2022-03-16 18:40:56.318 | INFO     | __main__:<module>:110 - tf :default_1 cv_bits2                   score: 3.8027138151284268
+2022-03-16 18:42:30.688 | INFO     | __main__:<module>:110 - tf :default_1 cv_area                    score: 3.7670274666344175
+2022-03-16 18:43:59.819 | INFO     | __main__:<module>:110 - tf :default_1 cv_lanczos                 score: 3.7938785762526774
+2022-03-16 18:45:21.037 | INFO     | __main__:<module>:110 - tf :default_1 pil_bilinear               score: 3.764316641728489
+2022-03-16 18:46:46.348 | INFO     | __main__:<module>:110 - tf :default_1 pil_bicubic                score: 3.789962892543774
+2022-03-16 18:48:18.153 | INFO     | __main__:<module>:110 - tf :default_1 pil_nearest                score: 3.683526190117879
+2022-03-16 18:49:50.734 | INFO     | __main__:<module>:110 - tf :default_1 pil_box                    score: 3.682872579776031
+2022-03-16 18:51:23.608 | INFO     | __main__:<module>:110 - tf :default_1 pil_lanczos                score: 3.798005823731009
+2022-03-16 18:52:46.609 | INFO     | __main__:<module>:110 - tf :default_1 pil_hamming                score: 3.757719011986783
+2022-03-16 18:54:24.484 | INFO     | __main__:<module>:110 - tf :default_1 nv_bilinear_float          score: 3.7738974250271213
+2022-03-16 18:56:05.012 | INFO     | __main__:<module>:110 - tf :default_1 torch_bilinear_float       score: 3.772558106879342
+2022-03-16 18:57:47.823 | INFO     | __main__:<module>:110 - tf :default_1 torch_bilinear_aa_float    score: 3.77255822463081
+2022-03-16 18:59:28.973 | INFO     | __main__:<module>:110 - tf :default_1 torch_bicubic_float        score: 3.804392168561785
+2022-03-16 19:01:11.330 | INFO     | __main__:<module>:110 - tf :default_1 torch_bicubic_aa_float     score: 3.7965341239671466
+2022-03-16 19:02:54.518 | INFO     | __main__:<module>:110 - tf :default_1 torch_area_float           score: 3.7315119366784653
+2022-03-16 19:04:36.235 | INFO     | __main__:<module>:110 - tf :default_1 torch_nearest_float        score: 3.6815251348161455
+2022-03-16 19:06:18.051 | INFO     | __main__:<module>:110 - tf :default_1 torch_nearest_exact_float  score: 3.682872579776031
+2022-03-16 19:08:29.591 | INFO     | __main__:<module>:110 - tf :default_1 cv_bilinear_float          score: 3.7725585000945867
+2022-03-16 19:10:39.595 | INFO     | __main__:<module>:110 - tf :default_1 cv_bilinear_exact_float    score: 3.7725585000945867
+2022-03-16 19:12:18.821 | INFO     | __main__:<module>:110 - tf :default_1 cv_nearest_float           score: 3.6815251348161455
+2022-03-16 19:13:45.872 | INFO     | __main__:<module>:110 - tf :default_1 cv_nearest_exact_float     score: 3.683526190117879
+2022-03-16 19:15:41.307 | INFO     | __main__:<module>:110 - tf :default_1 cv_bits_float              score: 3.7725585000945867
+2022-03-16 19:17:38.255 | INFO     | __main__:<module>:110 - tf :default_1 cv_bits2_float             score: 3.804392142437183
+2022-03-16 19:19:03.790 | INFO     | __main__:<module>:110 - tf :default_1 cv_area_float              score: 3.770601322123949
+2022-03-16 19:20:37.616 | INFO     | __main__:<module>:110 - tf :default_1 cv_lanczos_float           score: 3.794272324067091
+2022-03-16 19:22:28.154 | INFO     | __main__:<module>:110 - tf :default_1 pil_bilinear_float         score: 3.7725584856376555
+2022-03-16 19:24:10.949 | INFO     | __main__:<module>:110 - tf :default_1 pil_bicubic_float          score: 3.79653415593325
+2022-03-16 19:25:58.889 | INFO     | __main__:<module>:110 - tf :default_1 pil_nearest_float          score: 3.683526190117879
+2022-03-16 19:27:47.924 | INFO     | __main__:<module>:110 - tf :default_1 pil_box_float              score: 3.682872579776031
+2022-03-16 19:29:39.047 | INFO     | __main__:<module>:110 - tf :default_1 pil_lanczos_float          score: 3.802754482505019
+2022-03-16 19:31:31.022 | INFO     | __main__:<module>:110 - tf :default_1 pil_hamming_float          score: 3.766625209594686
+2022-03-16 19:33:10.469 | INFO     | __main__:<module>:110 - pytorch :default_1 nv_bilinear           score: 3.7699453911014906
+2022-03-16 19:34:44.863 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_bilinear        score: 3.769971526730288
+2022-03-16 19:36:10.168 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_bilinear_aa     score: 3.7699419013099393
+2022-03-16 19:37:36.792 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_bicubic         score: 3.8030512270861614
+2022-03-16 19:39:04.640 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_bicubic_aa      score: 3.7945326359261826
+2022-03-16 19:40:37.110 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_area            score: 3.7297610807553268
+2022-03-16 19:42:10.924 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_nearest         score: 3.681647621248289
+2022-03-16 19:43:34.820 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_nearest_exact   score: 3.6829121359403096
+2022-03-16 19:44:57.501 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_bilinear           score: 3.770484593015964
+2022-03-16 19:46:27.460 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_bilinear_exact     score: 3.769930152720341
+2022-03-16 19:47:59.858 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_nearest            score: 3.681647621248289
+2022-03-16 19:49:30.898 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_nearest_exact      score: 3.683601121321184
+2022-03-16 19:50:59.572 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_bits               score: 3.769930152720341
+2022-03-16 19:52:28.031 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_bits2              score: 3.803032168192492
+2022-03-16 19:54:00.057 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_area               score: 3.767167575094185
+2022-03-16 19:55:35.708 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_lanczos            score: 3.7941019683897377
+2022-03-16 19:57:10.125 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_bilinear          score: 3.764496707834051
+2022-03-16 19:58:45.442 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_bicubic           score: 3.7902475737539696
+2022-03-16 20:00:19.476 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_nearest           score: 3.683601121321184
+2022-03-16 20:01:54.095 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_box               score: 3.6829121359403096
+2022-03-16 20:03:30.568 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_lanczos           score: 3.798334127495308
+2022-03-16 20:05:04.983 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_hamming           score: 3.757920253357768
+2022-03-16 20:06:49.398 | INFO     | __main__:<module>:110 - pytorch :default_1 nv_bilinear_float     score: 3.774205760157079
+2022-03-16 20:08:22.900 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_bilinear_float  score: 3.7728430784583953
+2022-03-16 20:09:55.246 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_bilinear_aa_float score: 3.7728431328912215
+2022-03-16 20:11:23.706 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_bicubic_float   score: 3.804673536048819
+2022-03-16 20:12:52.186 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_bicubic_aa_float score: 3.796778886714586
+2022-03-16 20:14:25.782 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_area_float      score: 3.7319678339933247
+2022-03-16 20:16:06.491 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_nearest_float   score: 3.681647621248289
+2022-03-16 20:17:47.678 | INFO     | __main__:<module>:110 - pytorch :default_1 torch_nearest_exact_float score: 3.6829121359403096
+2022-03-16 20:19:58.638 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_bilinear_float     score: 3.772843300979123
+2022-03-16 20:21:59.221 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_bilinear_exact_float score: 3.772843300979123
+2022-03-16 20:23:38.189 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_nearest_float      score: 3.681647621248289
+2022-03-16 20:25:18.563 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_nearest_exact_float score: 3.683601121321184
+2022-03-16 20:27:29.255 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_bits_float         score: 3.772843300979123
+2022-03-16 20:29:43.099 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_bits2_float        score: 3.8046738305184724
+2022-03-16 20:31:23.602 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_area_float         score: 3.7707334195129834
+2022-03-16 20:33:04.751 | INFO     | __main__:<module>:110 - pytorch :default_1 cv_lanczos_float      score: 3.7945039647954473
+2022-03-16 20:34:57.429 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_bilinear_float    score: 3.7728431325656713
+2022-03-16 20:36:49.313 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_bicubic_float     score: 3.7967792152700692
+2022-03-16 20:38:40.906 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_nearest_float     score: 3.683601121321184
+2022-03-16 20:40:31.951 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_box_float         score: 3.6829121359403096
+2022-03-16 20:42:23.348 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_lanczos_float     score: 3.803042765790321
+2022-03-16 20:44:15.743 | INFO     | __main__:<module>:110 - pytorch :default_1 pil_hamming_float     score: 3.7669016177868104
+2022-03-16 20:44:16.344 | INFO     | __main__:<module>:115 - 
+
+
+2022-03-16 20:44:16.373 | INFO     | __main__:<module>:117 - Complete.

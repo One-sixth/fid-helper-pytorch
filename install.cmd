@@ -1,0 +1,1 @@
+pip install dist/fid_helper_pytorch-0.1.0-py3-none-any.whl --force-reinstall --no-deps
