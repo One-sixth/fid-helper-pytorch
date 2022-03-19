@@ -75,11 +75,14 @@ def torch_resample(x, new_hw, mode, is_tensor=False):
     else:
         raise AssertionError(_error_msg_bad_mode.format(ori_mode))
 
+    if not float_mode:
+        x = x.round_().clamp_(0, 255)
+
     if not is_tensor:
         # bchw->bhwc->hwc
         x = x.permute(0, 2, 3, 1)[0]
         if not float_mode:
-            x = x.round_().clamp_(0, 255).type(torch.uint8)
+            x = x.type(torch.uint8)
         x = x.numpy()
 
     return x
@@ -203,6 +206,7 @@ def tensor_resample_func(x, new_hw, mode, quant=True):
         if quant:
             x = x.round_() # .type(torch.uint8) # convert to uint8 is not necessary
         x = torch_resample(x, new_hw, mode, is_tensor=True)
+        x = x.div(255)
     else:
         # slow channel
         # rescale value range from [0, 1] float32 to [0, 255] uint8
