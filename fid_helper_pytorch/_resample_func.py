@@ -52,8 +52,9 @@ def torch_resample(x, new_hw, mode, is_tensor=False):
         # hwc->bhwc->bchw
         x = torch.from_numpy(x)
         x = x.type(torch.float32)[None,].permute(0, 3, 1, 2)
-        if float_mode:
-            mode = mode.removesuffix('_float')
+
+    if float_mode:
+        mode = mode.removesuffix('_float')
 
     if mode == 'nv_bilinear':
         x = nv_bilinear(x, new_hw)
