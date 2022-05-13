@@ -11,14 +11,14 @@ class MyTestCase(unittest.TestCase):
 
     def test_compute_fid_score_from_dir(self):
         fidhelper = FidHelper(':default_1', INPUT_RANGE_TF, device='cuda:0')
-        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, [299, 299], 'torch_bilinear_float', 2, 1, verbose=True)
-        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, [299, 299], 'torch_bilinear', 2, 1, verbose=True)
-        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, [299, 299], 'pil_bilinear_float', 2, 1, verbose=True)
-        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, [299, 299], 'pil_bilinear', 2, 1, verbose=True)
-        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, [299, 299], 'cv_bilinear_float', 2, 1, verbose=True)
-        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, [299, 299], 'cv_bilinear', 2, 1, verbose=True)
-        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, [299, 299], 'nv_bilinear_float', 2, 1, verbose=True)
-        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, [299, 299], 'nv_bilinear', 2, 1, verbose=True)
+        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, 2, 1, verbose=True)
+        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, 2, 1, verbose=True)
+        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, 2, 1, verbose=True)
+        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, 2, 1, verbose=True)
+        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, 2, 1, verbose=True)
+        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, 2, 1, verbose=True)
+        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, 2, 1, verbose=True)
+        fid = fidhelper.compute_fid_score_from_dir(sample_1_dir, sample_2_dir, 2, 1, verbose=True)
         self.assertTrue(True)
 
     def test_load_save_stat_file(self):
