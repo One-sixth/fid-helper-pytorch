@@ -53,7 +53,7 @@ def _parse_padding(padding):
 
 #----------------------------------------------------------------------------
 
-def filtered_lrelu(x, fu=None, fd=None, b=None, up=1, down=1, padding=0, gain=np.sqrt(2), slope=0.2, clamp=None, flip_filter=False, impl='cuda'):
+def filtered_lrelu(x, fu=None, fd=None, b=None, up=1, down=1, padding=0, gain=np.sqrt(2), slope=0.2, clamp=None, flip_filter=False, impl='ref'):
     r"""Filtered leaky ReLU for a batch of 2D images.
 
     Performs the following sequence of operations for each channel:

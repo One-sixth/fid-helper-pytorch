@@ -1,7 +1,6 @@
 import torch
 import pickle
 import os
-# import PIL.Image as Image
 import cv2
 from tqdm import tqdm
 from threading import Thread
@@ -21,14 +20,14 @@ if __name__ == '__main__':
 
     q = Queue(128)
 
-    cur_dir = os.path.dirname(__file__)
+    cur_dir = os.path.dirname(os.path.abspath(__file__))
     weight_path = cur_dir + '/stylegan3-t-ffhqu-256x256-shim.pkl'
 
     sample_dir_1 = cur_dir + '/sample_1'
     sample_dir_2 = cur_dir + '/sample_2'
 
     n_sample = 10000
-    batch_size = 32
+    batch_size = 4
     device = 'cuda:0'
 
     gnet = pickle.load(open(weight_path, 'rb'))['G_ema']
@@ -60,5 +59,5 @@ if __name__ == '__main__':
                     q.put([f'{out_dir}/{cur_i+p_i}.png', im])
 
     q.put(None)
-    q.join()
+    writer_thread.join()
     print('Complete.')

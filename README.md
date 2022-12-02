@@ -1,5 +1,8 @@
 # fid-helper-pytorch
 
+## Note: python 3.9 is the minimum required version  
+## 注意：python 3.9 是最低要求版本  
+
 This is a FID helper tool.  
 Provides a simple and convenient interface to calculate FID.  
 
@@ -65,7 +68,7 @@ Install from source
 ```commandline
 git clone https://github.com/One-sixth/fid-helper-pytorch
 cd fid-helper-pytorch
-python setup.py install
+pip install -e .
 ```
 Build wheel
 构建轮子
