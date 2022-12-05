@@ -169,10 +169,12 @@ _gen_sample_from_stylegan3/_batch_compare_fid.py 为完整的FID测试。
 
 这是我生成的测试数据。你可以从该测试数据中复现我的结果。  
 每个压缩包均有 10000 张png图像。  
-```
-https://anonfiles.com/dfDej8Oaxe/sample_1_zip
-https://anonfiles.com/V3N5j6O1x3/sample_2_zip
-```
+
+123pan: https://www.123pan.com/s/6HhUVv-9TzJ  
+
+~~https://anonfiles.com/dfDej8Oaxe/sample_1_zip~~  
+~~https://anonfiles.com/V3N5j6O1x3/sample_2_zip~~  
+
 
 ## Score comparison / 分数比较
 
